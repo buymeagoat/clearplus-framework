@@ -97,8 +97,7 @@ You may share and adapt these materials for educational or non‑commercial purp
 ## Contact
 
 **Author:** Tony Kapinos
-**Institution:** College of Saint Benedict & Saint John’s University (CSB/SJU)
-**Email:** [optional contact placeholder]
+**Email:** akapinos@gmail.com
 
 For collaboration or research inquiries, please open a GitHub issue or contact the author directly.
 
