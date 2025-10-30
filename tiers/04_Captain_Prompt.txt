@@ -1,0 +1,93 @@
+Captain Prompt Set
+"You command the cockpit; the AI runs diagnostics, confirms systems, and awaits your go-ahead.”
+Usage Order: Prompt Builder → Prompt Review → Run Task → AI Debrief
+
+::::: PROMPT BUILDER :::::  
+Instructions for User: Copy the entire Prompt Builder prompt into the chat window and fill in the Answer sections.  
+Purpose: Add moderate control fields so you can guide the AI with clarity and boundaries.  
+Instructions for AI: Review all user inputs for clarity, consistency, and missing details. If critical information is missing, ask one focused clarifying question before proceeding.
+Q1 – Goal  
+What do you want me to do or analyze?  
+(Default: Provide a detailed, structured response following the 5-element schema — Header, Context, Analysis, Recommendations, and Summary.)  
+A1:  
+Q2 – Model Type  
+Which model or version should I use?  
+(Default: Use the current available GPT-model with balanced performance and reasoning.)  
+A2:  
+Q3 – Temperature (0–1)  
+How creative or precise should the output be?  
+(Default: 0.3 — prioritize clarity and consistency over creativity.)  
+A3:  
+Q4 – Token Limit  
+How long can the response be (in tokens)?  
+(Default: 900 tokens or equivalent length for clarity without truncation.)  
+A4:  
+Q5 – Role / Persona  
+Should I respond in a specific role, perspective, or voice?  
+(Default: Professional analyst with clear, evidence-based tone.)  
+A5:  
+Q6 – Citation Rule  
+How should I handle sources or references?  
+(Default: Provide factual attribution when possible; use descriptive phrasing if citations are unavailable.)  
+A6:  
+Q7 – Risk Tolerance  
+How cautious should I be about uncertain or speculative information (low, medium, high)?  
+(Default: Medium — balance thoroughness with efficiency.)  
+A7:  
+Q8 – Verification Required  
+Do you want the AI to verify data or reasoning before presenting conclusions (yes/no)?  
+(Default: Yes — validate logic and coherence before finalizing output.)  
+A8:  
+Q9 – Limits  
+List any constraints (budget, time, scope, or sensitivity boundaries).  
+(Default: Maintain logical and ethical limits; omit sensitive personal data.)  
+A9:  
+Q10 – Expectations  
+What would make this answer successful (accuracy, depth, actionable recommendations, etc.)?  
+(Default: A clear, logically structured analysis with realistic and actionable recommendations.)  
+A10:  
+Q11 – Style / Voice  
+How should the response sound (formal, neutral, instructional, narrative)?  
+(Default: Neutral-formal with structured reasoning and concise explanations.)  
+A11:  
+Q12 – Output Format  
+Specify format (Markdown, report layout, table, etc.)  
+(Default: Markdown with 5 sections — Header, Context, Analysis, Recommendations, Summary.)  
+A12:  
+
+::::: PROMPT REVIEW :::::  
+Instructions for User: Copy and paste the entire Prompt Review prompt and paste it ABOVE your Prompt Builder prompt in the chat window.  
+Purpose: Perform a pre-flight diagnostic to ensure all advanced parameters and configurations are correct before execution.  
+Instructions for AI: Do not run the task yet.  
+Read the user’s Captain Prompt Builder carefully and respond in structured, professional language, about 220 ± 20 words.  
+
+Perform the following 7 checks before proceeding:  
+1. **Parameter Conflicts:** Identify any incompatible or missing configuration values (model type, temperature, tokens, etc.).  
+2. **Edge Cases:** Flag unusual conditions that could affect accuracy or stability.  
+3. **Token Estimate:** Approximate expected token usage and confirm fit within the stated limit.  
+4. **Risk Rating:** Assign a level (Low / Medium / High) based on task complexity, uncertainty, and data confidence.  
+5. **Logical Consistency:** Verify that instructions, goals, and constraints do not contradict each other.  
+6. **Output Fit:** Ensure the requested format aligns with the specified schema (Header, Context, Analysis, Recommendations, Summary).  
+7. **User Confirmation:** Pose two concise questions that confirm scope and success criteria.  
+
+End with a short readiness statement (e.g., “All systems checked. Ready to execute upon confirmation.”).  
+Tone = calm, precise, professional — like a first officer reading a flight checklist.
+
+::::: AI DEBRIEF :::::  
+Instructions for User: Copy and paste the entire AI Debrief prompt after the AI responds to your Prompt Review and/or Prompt Builder prompts.  
+Purpose: Deliver a professional post-execution analysis detailing reasoning quality, confidence, and improvement paths.  
+Instructions for AI: Analyze your completed response; do not redo the work.  
+Length ≈ 220 ± 20 words.  
+
+Provide a structured summary with the following sections:  
+1. **Mission Summary:** 1–2 sentences describing what was produced.  
+2. **Reasoning Trace:** Outline the 4 main reasoning steps taken.  
+3. **Confidence Scores (0–100 %)** for Accuracy, Relevance, Logical Flow, and Risk Control.  
+4. **AI vs User Control Ratio** (approximate % discretion AI used).  
+5. **One Key Improvement:** A concise, actionable refinement.  
+6. **Alternative Approach:** Briefly describe one different method or structure that could also meet the objective.  
+
+End with:  
+> “Diagnostics complete. Would you like me to implement the improvement, explore the alternative, or finalize this version?”  
+
+Tone = precise, confident, professional — like a captain delivering a mission debrief.
