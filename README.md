@@ -60,23 +60,41 @@ You can use CLEAR+ with any model (GPT, Claude, Gemini, etc.) and any interface 
 
 ## Repository Contents
 
-```
+```text
 /
-├── 01_Auto‑Pilot_Prompt.txt
-├── 02_Co‑Pilot_Prompt.txt
-├── 03_Navigator_Prompt.txt
-├── 04_Captain_Prompt.txt
-├── 05_Manual_Control_Prompt.txt
-├── CLEAR_Prompting_Document_Outline.txt
-├── Prompt_User_Profiles.txt
-├── Prompt_Intentions.txt
-├── Prompt_Starters_01_Rapid_v2.txt
-├── Prompt_Starters_02_Beginner_v2.txt
-├── Prompt_Starters_03_Intermediate_v2.txt
-├── Prompt_Starters_04_Advanced_v2.txt
-├── Prompt_Starters_05_Comprehensive_v2.txt
-└── CLEAR+_Whitepaper.pdf
+├── contrib/                # Collaboration guidelines and community-built extensions
+├── docs/                   # Whitepaper, development path, and other architectural references
+├── examples/               # Applied use-cases showing CLEAR+ in practice
+├── resources/              # Supplemental reference material and external readings
+├── tiers/                  # Prompt templates for each CLEAR+ flight mode
+├── LICENSE
+└── README.md               # You are here
 ```
+
+### Prompt Templates (`tiers/`)
+
+The five CLEAR+ flight modes live in the `tiers/` directory. Each text file mirrors one of the
+prompt sets described above:
+
+| File                         | Mode             |
+| ---------------------------- | ---------------- |
+| `01_Auto-Pilot_Prompt.txt`   | Auto-Pilot       |
+| `02_Co-Pilot_Prompt.txt`     | Co-Pilot         |
+| `03_Navigator_Prompt.txt`    | Navigator        |
+| `04_Captain_Prompt.txt`      | Captain          |
+| `05_Manual_Control_Prompt.txt` | Manual Control |
+
+Copy the template that matches the level of structure you want, then follow the "How to Use" steps
+below.
+
+### Additional Materials
+
+- **Documentation (`docs/`)** – includes the CLEAR+ whitepaper and a roadmap for further
+  development.
+- **Examples (`examples/`)** – demonstrates how teams integrate CLEAR+ into their workflows.
+- **Resources (`resources/`)** – collects background readings and supporting PDFs.
+- **Contribution Hub (`contrib/`)** – outlines ways to extend the framework and collaborate with the
+  community.
 
 ---
 
